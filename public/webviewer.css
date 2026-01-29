@@ -3,6 +3,8 @@
 
 .signatures-popup{
     border-radius: 6px !important;
+    overflow: scroll;
+    /*height: fit-content !important;*/
 }
 .signatures-popup .button.blue {
     background-color: #ff8224 !important; /* Use !important to override existing styles */
@@ -10,6 +12,9 @@
     position: relative;
     color: transparent !important;
     border: none;
+}
+.keyboard-paint{
+    padding: 10px 0 !important;
 }
 
 /* Target mobile screens */
@@ -60,21 +65,41 @@
 .sign-popup-header{
     border-bottom: 1px solid rgba(167, 179, 196, 0.3);
     padding-bottom: 0 !important;
-    margin-bottom: 20px !important;
+    /*margin-bottom: 20px !important;*/
     font-size: 16px;
+    /*margin: 4px !important;*/
 
     /*margin-bottom: 1rem;*/
 }
+.paint-container{
+   /*height: 150px !important;*/
+}
+/*.signatures-popup .paint-container{*/
+/*    max-height: 200px !important;*/
+/*}*/
 .sign-popup-header div.active{
     color: #ff8224 !important;
+    background: none !important;
 }.sign-popup-header div{
      color: #667085 !important;
-
  }
+ .sign-content{
+     /*height: 95% !important;*/
+     /*max-height: 90% !important;*/
+ }
+
+.signatures-popup .sign-popup-header div:hover{
+    background: none !important;
+}
+
+    /*.create-sign-header{*/
+ /*    padding: 4px 12px !important;*/
+ /*}*/
 .buttons-container{
     padding: 12px 12px 12px 12px !important;
 
 }
+.paint-container
 .font-tool span{
     font-weight: 375;
 }
@@ -83,6 +108,44 @@
     padding: 0 24px 20px 24px !important;
     border-bottom: 1px solid rgba(167, 179, 196, 0.3);
 
+}
+.create-sign-header > div:first-child {
+    position: relative;
+    color: transparent !important;
+    user-select: none;
+    border: none;
+}
+
+.create-sign-header > div:first-child::before {
+    content: "Draw";
+    color: #101828 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    user-select: none;
+}
+
+.create-sign-header > div:nth-child(2) {
+    position: relative;
+    color: transparent !important;
+    user-select: none;
+    border: none;
+}
+
+.create-sign-header > div:nth-child(2)::before {
+    content: "Type";
+    color: #101828 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    user-select: none;
+}
+#electronicTrackpadCanvas{
+    /*height: 150px !important;*/
 }
 .signatures-popup .button{
     min-width: fit-content;
@@ -126,7 +189,18 @@ div{
     -moz-user-select: none; /* For Firefox */
     -ms-user-select: none;
 }
-
+.sign-title{
+    display: none !important;
+}
+.close-button{
+    display: none;
+}
+.clear-container .left-btns{
+    display: none !important;
+}
+.clear-container .clear{
+    color: #ff8224 !important;
+}
 .sign-popup-header > div:first-child{
     position: relative;
     color: transparent !important;
@@ -137,7 +211,7 @@ div{
 
 
 .sign-popup-header > div:first-child::before{
-    content: "Draw"; /* Replace text visually */
+    content: "Saved Signatures"; /* Replace text visually */
     color: #101828 !important;
     position: absolute;
     top: 50%;
@@ -162,7 +236,7 @@ div{
 }
 
 .sign-popup-header > div:nth-child(2)::before{
-    content: "Type"; /* Replace text visually */
+    content: "Create"; /* Replace text visually */
     color: #101828 !important;
     position: absolute;
     top: 50%;
@@ -180,4 +254,11 @@ div{
     font-family: "Outfit";
     color: #101828;
 
+}
+
+.form-board .form-content{
+    /*display: none;*/
+}
+.form-board .fold-button{
+    /*display: none;*/
 }

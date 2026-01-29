@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Outfit:wght@100..900&family=Pacifico&family=Sacramento&family=Shadows+Into+Light&display=swap');
+
+
+.signatures-popup{
+    border-radius: 6px !important;
+}
+.signatures-popup .button.blue {
+    background-color: #ff8224 !important; /* Use !important to override existing styles */
+    /*color: #fff !important;*/
+    position: relative;
+    color: transparent !important;
+    border: none;
+}
+
+/* Target mobile screens */
+@media (max-width: 767px) {
+    .signatures-popup .button.blue::before {
+        content: "Save";
+        color: #fff !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*width: fit-content;*/
+    }
+    .paint-container{
+        touch-action: none;
+    }
+    .signatures-popup .buttons-container .button{
+        padding: 8px !important;
+    }
+    .signatures-popup .buttons-container .button.blue{
+        padding: 8px !important;
+    }
+}
+
+/* Target bigger screens */
+@media (min-width: 768px) {
+    .signatures-popup .button.blue::before {
+        content: "Save Signature";
+        color: #fff !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+
+/*.signatures-popup .button.blue::before {*/
+/*    content: "Save Signature"; !* Replace text visually *!*/
+/*    color: #fff !important;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    width: 100%;*/
+/*}*/
+.sign-popup-header{
+    border-bottom: 1px solid rgba(167, 179, 196, 0.3);
+    padding-bottom: 0 !important;
+    margin-bottom: 20px !important;
+    font-size: 16px;
+
+    /*margin-bottom: 1rem;*/
+}
+.sign-popup-header div.active{
+    color: #ff8224 !important;
+}.sign-popup-header div{
+     color: #667085 !important;
+
+ }
+.buttons-container{
+    padding: 12px 12px 12px 12px !important;
+
+}
+.font-tool span{
+    font-weight: 375;
+}
+.signatures-popup .property-container{
+    margin: 20px 0px 0px 0px !important;
+    padding: 0 24px 20px 24px !important;
+    border-bottom: 1px solid rgba(167, 179, 196, 0.3);
+
+}
+.signatures-popup .button{
+    min-width: fit-content;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    font-family: "Outfit";
+    padding: 0.625rem 0.875rem;
+    height: 2.5rem !important;
+    line-height: 0;
+    border-radius: .5rem !important;
+    position: relative;
+    overflow: hidden;
+    gap: 0.25rem;
+    border: 1px solid #d0d5dd !important;
+    background: #ffffff !important;
+    color: #344054 !important;
+    font-size: 0.875rem;
+}
+.divider{
+    display: none !important;
+}
+span, p, select, option{
+    font-family: "Outfit" !important;
+    font-weight: 375;
+    color: #101828;
+}
+div{
+    font-family: "Outfit" !important;
+    font-weight:  575 !important;
+    color: #101828;
+
+}
+.sign-popup-header div.active{
+    border-bottom: 2px solid #ff8224 !important;
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none;
+}
+
+.sign-popup-header > div:first-child{
+    position: relative;
+    color: transparent !important;
+    user-select: none;
+    border: none;
+}
+
+
+
+.sign-popup-header > div:first-child::before{
+    content: "Draw"; /* Replace text visually */
+    color: #101828 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none;
+    /*pointer-events: none; !* Prevents click events *!*/
+}
+.sign-popup-header > div:nth-child(2){
+    position: relative;
+    color: transparent !important;
+    border: none;
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none;
+    /*pointer-events: none; !* Prevents click events *!*/
+}
+
+.sign-popup-header > div:nth-child(2)::before{
+    content: "Type"; /* Replace text visually */
+    color: #101828 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    user-select: none; /* Prevents text selection */
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none;
+    /*pointer-events: none; !* Prevents click events *!*/
+}
+
+.color-tool span{
+    font-family: "Outfit";
+    color: #101828;
+
+}
